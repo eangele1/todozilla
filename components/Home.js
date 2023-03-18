@@ -238,11 +238,10 @@ const Home = (props) => {
         <View
           style={{
             width: width,
-            marginTop: 15,
             height:
               insets.bottom !== 0
-                ? height * 0.8 - insets.bottom - 20
-                : height * 0.8,
+                ? height * 0.7 - insets.bottom - 20
+                : height * 0.7,
           }}
         >
           {tasks.length !== 0 ? (
@@ -261,7 +260,7 @@ const Home = (props) => {
                   width: width,
                   height:
                     completedTasks.length !== 0 || isKeyboardVisible
-                      ? height * 0.3125
+                      ? height * 0.25
                       : height * 0.66,
                   alignItems: "center",
                 }}
@@ -291,7 +290,7 @@ const Home = (props) => {
               <View
                 style={{
                   width: width,
-                  height: tasks.length !== 0 ? height * 0.3125 : height * 0.66,
+                  height: tasks.length !== 0 ? height * 0.25 : height * 0.66,
                   alignItems: "center",
                 }}
               >

@@ -11,8 +11,6 @@ import Swipeable from "react-native-gesture-handler/Swipeable";
 import { FontAwesome, FontAwesome5 } from "@expo/vector-icons";
 
 const Task = (props) => {
-  //const [text, onChangeText] = useState(props.item.name);
-
   const inputRef = useRef();
   const textRef = useRef("");
   const editText = useCallback(() => {
